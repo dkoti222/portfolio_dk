@@ -6,12 +6,12 @@ import React from 'react';
 
 interface NavbarProps {
   homeRef: React.RefObject<HTMLElement>;
-  stackRef: React.RefObject<HTMLElement>;
+
   projectsRef: React.RefObject<HTMLElement>;
-  connectRef: React.RefObject<HTMLElement>;
+
 }
 
-const Navbar: React.FC<NavbarProps> = ({ homeRef, stackRef, projectsRef, connectRef }) => {
+const Navbar: React.FC<NavbarProps> = ({ homeRef, projectsRef }) => {
   const handleScroll = (ref: React.RefObject<HTMLElement>) => {
     if (ref.current) {
       const navbarHeight = 80; // approximate height of your navbar in px
