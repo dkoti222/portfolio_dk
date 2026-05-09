@@ -1,20 +1,7 @@
-<<<<<<< HEAD
 'use client';
 import React, { forwardRef } from "react";
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-=======
-import React, { forwardRef } from "react";
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-import { TiVendorAndroid } from 'react-icons/ti';
-import { IoIosAppstore } from 'react-icons/io';
-
-const techStack = [
-  { icon: <TiVendorAndroid />, color: "text-green-400" },
-  { icon: <IoIosAppstore />, color: "text-green-500" },
-];
->>>>>>> e010bd2adef4df0fba066fdad713a4b521654769
 
 const HeroSection = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
   (props, ref) => {
@@ -23,7 +10,6 @@ const HeroSection = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
         ref={ref}
         id="home"
         {...props}
-<<<<<<< HEAD
         className="relative flex items-center justify-center min-h-screen w-full max-w-6xl mx-auto px-6 pb-24 scroll-mt-32"
       >
         <div className="flex flex-col-reverse md:flex-row items-center justify-center w-full gap-10 md:gap-14">
@@ -88,43 +74,6 @@ const HeroSection = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
           </div>
 
           {/* RIGHT: Spinning Globe with Profile */}
-=======
-        className="mt-10 flex flex-col items-center w-full max-w-5xl mx-auto px-2 pt-32 scroll-mt-32"
-      >
-        <div className="flex flex-col-reverse md:flex-row items-center justify-center w-full gap-10 md:gap-24">
-          {/* Left: Name, Role, Stack */}
-          <div className="flex flex-col text-center md:text-left space-y-6 max-w-xl">
-            <h1 className="text-3xl md:text-6xl font-serif font-bold">Hello,</h1>
-            <h1 className="text-3xl md:text-6xl font-serif font-bold">I'm Koti Duddu</h1>
-
-            <div className="flex flex-col md:flex-row md:gap-4 items-center rounded-2xl">
-              <h2 className="text-xl md:text-3xl text-white/80 font-serif mb-4 md:mb-0">
-                React Native Developer
-              </h2>
-
-              <motion.div
-                className="flex flex-row gap-2 justify-center overflow-x-auto md:flex-wrap"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                transition={{ staggerChildren: 0.1 }}
-              >
-                {techStack.map((tech, i) => (
-                  <motion.div
-                    key={i}
-                    className={`text-5xl ${tech.color} shadow-lg backdrop-blur-md`}
-                    whileHover={{ scale: 1.2 }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                  >
-                    {tech.icon}
-                  </motion.div>
-                ))}
-              </motion.div>
-            </div>
-          </div>
-
-          {/* Right: Spinning Globe with Profile */}
->>>>>>> e010bd2adef4df0fba066fdad713a4b521654769
           <div className="relative w-50 h-50 rounded-full flex items-center justify-center">
             <svg
               viewBox="0 0 100 100"
@@ -137,22 +86,12 @@ const HeroSection = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
                   d="M50,50 m-35,0 a35,35 0 1,1 70,0 a35,35 0 1,1 -70,0"
                 />
               </defs>
-<<<<<<< HEAD
               <text fontSize="9" fill="rgba(255,255,255,0.8)">
-=======
-
-              <text fontSize="10" fill="rgba(255,255,255,0.8)">
->>>>>>> e010bd2adef4df0fba066fdad713a4b521654769
                 <textPath href="#circlePath" startOffset="0%">
                   AVAILABLE FOR WORK  •
                 </textPath>
               </text>
-<<<<<<< HEAD
               <text fontSize="9" fill="rgba(255,255,255,0.8)" transform="rotate(180,50,50)">
-=======
-
-              <text fontSize="10" fill="rgba(255,255,255,0.8)" transform="rotate(180,50,50)">
->>>>>>> e010bd2adef4df0fba066fdad713a4b521654769
                 <textPath href="#circlePath" startOffset="0%">
                   AVAILABLE FOR WORK  •
                 </textPath>
@@ -161,11 +100,7 @@ const HeroSection = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
 
             <div className="w-[130px] h-[130px] rounded-full overflow-hidden shadow-md bg-black">
               <Image
-<<<<<<< HEAD
                 src="/onepic1.jpeg"
-=======
-                src="/pp.jpeg"
->>>>>>> e010bd2adef4df0fba066fdad713a4b521654769
                 alt="Koti Duddu Profile"
                 width={130}
                 height={130}
@@ -174,7 +109,6 @@ const HeroSection = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
             </div>
           </div>
         </div>
-<<<<<<< HEAD
 
         {/* Bottom gradient line */}
         <motion.div
@@ -184,8 +118,6 @@ const HeroSection = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
           transition={{ duration: 1.4, delay: 0.6, ease: 'easeInOut' }}
           style={{ transformOrigin: 'center' }}
         />
-=======
->>>>>>> e010bd2adef4df0fba066fdad713a4b521654769
       </section>
     );
   }

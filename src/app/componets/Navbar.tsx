@@ -6,30 +6,15 @@ import React from 'react';
 
 interface NavbarProps {
   homeRef: React.RefObject<HTMLElement>;
-<<<<<<< HEAD
   projectsRef: React.RefObject<HTMLElement>;
-=======
-
-  projectsRef: React.RefObject<HTMLElement>;
-
->>>>>>> e010bd2adef4df0fba066fdad713a4b521654769
 }
 
 const Navbar: React.FC<NavbarProps> = ({ homeRef, projectsRef }) => {
   const handleScroll = (ref: React.RefObject<HTMLElement>) => {
     if (ref.current) {
-<<<<<<< HEAD
       const navbarHeight = 80;
       const elementTop = ref.current.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({ top: elementTop - navbarHeight, behavior: 'smooth' });
-=======
-      const navbarHeight = 80; // approximate height of your navbar in px
-      const elementTop = ref.current.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({
-        top: elementTop - navbarHeight, // offset by navbar height
-        behavior: 'smooth',
-      });
->>>>>>> e010bd2adef4df0fba066fdad713a4b521654769
     }
   };
 
